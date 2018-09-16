@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body {
+  padding: 0px;
+  height: 100%;
+  background:  #ECEFF1
+}
+
+#root {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "fluttershy",
+    "image": "./images/fluttershy.jpg"
+  },
+  {
+    "id": 2,
+    "name": "applejack",
+    "image": "./images/applejack.jpg"
+  },
+  {
+    "id": 3,
+    "name": "pinkie pie",
+     "image": "./images/pinkie pie.jpg"    
+  },
+  {
+    "id": 4,
+    "name": "princess cadance",
+    "image": "./images/princess cadance.jpg"
+  },
+  {
+    "id": 5,
+    "name": "princess celestia",
+    "image": "./images/princess celestia.jpg"
+  },
+  {
+    "id": 6,
+    "name": "princess luna",
+    "image": "./images/princess luna.jpg"
+  },
+  {
+    "id": 7,
+    "name": "rainbow dash",
+    "image": "./images/rainbow dash.jpg"
+  },
+  {
+    "id": 8,
+    "name": "rarity",
+    "image": "./images/rarity.jpg"
+  },
+  {
+    "id": 9,
+    "name": "spike",
+    "image": "./images/spike.jpg"
+  },
+  {
+    "id": 10,
+    "name": "sunset shimmer",
+    "image": "./images/sunset shimmer.jpg"
+  },
+  {
+    "id": 11,
+    "name": "sweetie belle",
+    "image": "./images/sweetie belle.jpg"
+  },
+  {
+    "id": 12,
+    "name": "twilight sparkle",
+    "image": "./images/twilight sparkle.jpg"
+  }
+]
