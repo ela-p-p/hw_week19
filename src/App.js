@@ -10,25 +10,38 @@ import "./App.css";
 class App extends Component {
 
   state = {
-    memory
+    memory,
+    visited: []
   };
 
   shuffle = array => {
-    let i = array.length - 1;
-    for (; i > 0; i--) {
+    let newArray = array.slice();
+    for (let i = newArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      const temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
+      const temp = newArray[i];
+      newArray[i] = newArray[j];
+      newArray[j] = temp;
     }
-    return array;
+    return newArray;
   };
 
-  handleClickEvent = event => {
-    const mlps = this.shuffle(memory)
-    this.setState({ memory: mlps });
+  handleClickEvent = id => {
+    const containsId = (element) => {
+      return element === id;
+    };
+    if (!this.state.visited.some(containsId)) {
+      const mlps = this.shuffle(memory);
+      const newVisited = [...this.state.visited, id];
+      console.log('NEW VISITED', newVisited)
+      this.setState({
+        memory: mlps,
+        visited: newVisited
+      });
+      return true;
+    }
+    return false;
   };
-
+  
   render() {
     return (
       <Wrapper>
@@ -40,6 +53,7 @@ class App extends Component {
             id={mlp.id}
             key={mlp.id}
             image={mlp.image}
+            shuffleHandler={this.handleClickEvent}
           />
         ))}
       </Wrapper>
